@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item">
+                <img src="main-course.jpg">
+                <div class="details">
+                    <div class="entry">
+                        <div class="name" onclick="myFunction()">
+                            <h3>Main Course</h3>
+                            <ion-icon name="caret-down-outline" class="icon-arrow"></ion-icon>
+                        </div>
+                        <h3 class="price">$12.00</h3>
+                    </div>
+                    <div class="dropdown">
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed aspernatur, eveniet eligendi exercitationem qui.</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="main-course.jpg">
+                <div class="details">
+                    <div class="entry">
+                        <div class="name" onclick="myFunction()">
+                            <h3>Main Course</h3>
+                            <ion-icon name="caret-down-outline" class="icon-arrow"></ion-icon>
+                        </div>
+                        <h3 class="price">$12.00</h3>
+                    </div>
+                    <div class="dropdown">
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed aspernatur, eveniet eligendi exercitationem qui.</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="main-course.jpg">
+                <div class="details">
+                    <div class="entry">
+                        <div class="name" onclick="myFunction()">
+                            <h3>Main Course</h3>
+                            <ion-icon name="caret-down-outline" class="icon-arrow"></ion-icon>
+                        </div>
+                        <h3 class="price">$12.00</h3>
+                    </div>
+                    <div class="dropdown">
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed aspernatur, eveniet eligendi exercitationem qui.</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="main-course.jpg">
+                <div class="details">
+                    <div class="entry">
+                        <div class="name" onclick="myFunction()">
+                            <h3>Main Course</h3>
+                            <ion-icon name="caret-down-outline" class="icon-arrow"></ion-icon>
+                        </div>
+                        <h3 class="price">$12.00</h3>
+                    </div>
+                    <div class="dropdown">
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed aspernatur, eveniet eligendi exercitationem qui.</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="main-course.jpg">
+                <div class="details">
+                    <div class="entry">
+                        <div class="name" onclick="myFunction()">
+                            <h3>Main Course</h3>
+                            <ion-icon name="caret-down-outline" class="icon-arrow"></ion-icon>
+                        </div>
+                        <h3 class="price">$12.00</h3>
+                    </div>
+                    <div class="dropdown">
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed aspernatur, eveniet eligendi exercitationem qui.</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="main-course.jpg">
+                <div class="details">
+                    <div class="entry">
+                        <div class="name" onclick="myFunction()">
+                            <h3>Main Course</h3>
+                            <ion-icon name="caret-down-outline" class="icon-arrow"></ion-icon>
+                        </div>
+                        <h3 class="price">$12.00</h3>
+                    </div>
+                    <div class="dropdown">
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed aspernatur, eveniet eligendi exercitationem qui.</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // const dropdowns = document.querySelectorAll('.dropdown');
+         
+        // dropdowns.forEach(dropdown => {
+        //     const select = document.querySelector('.name');
+        //     const arrow = document.querySelector('.icon-arrow');
+        //     const text = document.querySelectorAll('.text');
+
+        //     select.addEventListener('click', () => {
+        //         select.classList.toggle('name');
+        //         arrow.classList.toggle('arrow-rotate');
+        //     });
+
+        // });
+
+        function myFunction() {
+            $(".dropdown").toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.name')) {
+                var dropdowns = document.getElementsByClassName("text");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
