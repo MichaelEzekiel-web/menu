@@ -8,6 +8,34 @@ body{
     font-family: 'Poppins', 'sans-serif';
 }
 
+.swiper{
+    width: 100%;
+}
+
+.swiper-wrapper{
+    width: 100%;
+    height: 10em;
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.specials_item{
+    width: 10em;
+    background: url('main-course.jpg');
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-position-y: -45px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.title{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 .container{
     max-width: 100%;
     margin: 20px;
